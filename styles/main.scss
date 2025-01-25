@@ -1,12 +1,14 @@
+//helpers
 @use 'normalize';
 @use 'fonts';
 @use 'utils';
 @use 'globals';
 @use 'variables';
 
-body {
-  background: greenyellow;
-  p {
-    color: red;
-  }
-}
+//Blocks
+@use 'blocks/icon';
+@use 'blocks/button';
+@use 'blocks/burger-button';
+@use 'blocks/logo';
+@use 'blocks/header';
+
