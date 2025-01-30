@@ -265,7 +265,7 @@ body {
   flex-direction: column;
   font-family: var(--font-family-base);
   letter-spacing: -0.03em;
-  color: var(--color-gray-50);
+  color: var(--color-grey-50);
   background-color: var(--color-dark);
 }
 
@@ -509,11 +509,25 @@ button[aria-label]::before {
   max-width: clamp(7.875rem, 6.8073347107rem + 4.3801652893vw, 11.1875rem);
 }
 
+.header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 6.25rem 12.5rem;
+}
+@keyframes scrolling-header {
+  to {
+    box-shadow: 0 0 1rem 0 var(--color-dark-40);
+  }
+}
 .header__promo {
   padding-block: 1.25rem;
   text-align: center;
   border-bottom: var(--border);
-  color: var(--color-grey-50);
+  background-color: var(--color-dark-10);
 }
 @media (width <= 47.99875rem) {
   .header__promo {
