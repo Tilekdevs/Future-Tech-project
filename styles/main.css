@@ -647,17 +647,17 @@ button[aria-label]::before {
     column-gap: 0.875rem;
   }
 }
-.soc1als__list--item {
+.soc1als__item {
   display: flex;
 }
-.soc1als__list__link {
+.soc1als__link {
   color: var(--color-light);
   --size: 1.5rem;
   width: var(--size);
   height: var(--size);
 }
 @media (width <= 90.06125rem) {
-  .soc1als__list__link {
+  .soc1als__link {
     --size: 1.25rem;
   }
 }

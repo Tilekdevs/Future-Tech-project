@@ -8,19 +8,19 @@
     @include laptop {
       column-gap: rem(14);
     }
+  }
 
-    &--item {
-      display: flex;
-    }
+  &__item {
+    display: flex;
+  }
 
-    &__link {
-      color: var(--color-light);
+  &__link {
+    color: var(--color-light);
 
-      --size: #{rem(24)};
-      @include  square(var(--size));
-      @include laptop {
-        --size: #{rem(20)};
-      }
+    --size: #{rem(24)};
+    @include  square(var(--size));
+    @include laptop {
+      --size: #{rem(20)};
     }
   }
 }
