@@ -28,6 +28,11 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   color: var(--color-light);
+  cursor: context-menu;
+}
+
+dt {
+  cursor: context-menu;
 }
 
 h1, .h1,
@@ -73,6 +78,7 @@ h6, .h6 {
 
 p {
   --paragraphMarginBottom: #{rem(24)};
+  cursor: context-menu;
 }
 
 a,
